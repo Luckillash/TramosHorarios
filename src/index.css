@@ -24,64 +24,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
+/* Navbar */
+
 .navbar {
-  width: 100vw;
-  height: 10vh;
-  background: linear-gradient(90deg, #03045e, #023e8a);
+  /* Display */
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  /* Sizing */
+  width: 100vw;
+  height: 10vh;
+  /* Style */
+  background: linear-gradient(90deg, #03045e, #023e8a);
 }
 
+.logo {
+  /* Sizing */
+  width: 40%;
+  /* Style */
+  font-family: 'Courgette', cursive;
+  color: white;
+  font-size: 2rem;
+}
+
+.aviso {
+  /* Sizing */
+  width: 40%;
+  /* Style */
+  font-family: 'Courgette', cursive;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+/* App */
+
 .app {
+  /* Display */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Sizing */
   width: 100%;
   height: 90vh;
+  /* Style */
   background-color: black;
 }
 
 .container {
-  width: 99%;
-  height: 98%;
+  /* Display */
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  /* Sizing */
+  width: 99%;
+  height: 98%;
+
 }
 
 .box {
-  background: white;
+  /* Display */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Sizing */
   margin: 1%;
+  /* Style */
+  background: white;
   border-radius: 5px;
   font-size: 1.25rem;
 }
 
 .box-activated {
+  /* Style */
   background: linear-gradient(90deg, #26ff00, #2ca500);
   color: white;
 }
 
 .box-limit {
-  background: linear-gradient(90deg, #ff0000, #b30000); /* #f28367 */
+  /* Style */
+  background: linear-gradient(90deg, #ff0000, #b30000); 
   color: black;
 }
 
-.logo {
-  font-family: 'Courgette', cursive;
-  color: white;
-  font-size: 2rem;
-  width: 40%;
-}
 
-.aviso {
-  font-family: 'Courgette', cursive;
-  color: white;
-  font-size: 1rem;
-  width: 40%;
-}
